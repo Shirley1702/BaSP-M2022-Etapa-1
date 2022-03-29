@@ -12,4 +12,4 @@ In this project we start to develop the page with html.
 ### Created by 
 Shirley Seaton
 ### Contact information
-shirleyseaton@gmail.com
+shirleyseaton17@gmail.com
