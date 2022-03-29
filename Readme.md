@@ -4,6 +4,7 @@ And he has asked us to develop a website which we will call “Trackgenix”.
 ## Features
 In this project we start to develop the page with html.
 
+<<<<<<< HEAD:readme.md
 ## Order of use
 ```
 1. Download Semana-02 content
@@ -13,3 +14,7 @@ In this project we start to develop the page with html.
 Shirley Seaton
 ### Contact information
 shirleyseaton@gmail.com
+=======
+
+## 
+>>>>>>> fca3a89943442e7494e019f309dd45f7dbe87ec2:Readme.md
