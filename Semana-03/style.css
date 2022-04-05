@@ -8,7 +8,7 @@ header {
 
 h1 {
     position: absolute;
-    left: calc(50% - 199px/2 - 391.5px);
+    left: calc(50% - 199px/2 - 391px);
     font-size: 40px;
     line-height: 47px;
     color: #373867;
@@ -40,7 +40,7 @@ aside {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 31.579px;
+    font-size: 31px;
     line-height: 37px;
     color: #373867;
 }
@@ -53,7 +53,7 @@ aside {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 31.579px;
+    font-size: 31px;
     line-height: 37px;
     color: #373867;
 }
@@ -73,7 +73,7 @@ aside {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 11.8421px;
+    font-size: 12px;
     line-height: 19px;
     color: #373867;
 }
@@ -86,7 +86,7 @@ aside {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 11.8421px;
+    font-size: 12px;
     line-height: 19px;
     color: #373867;
 }
@@ -99,7 +99,7 @@ aside {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 11.8421px;
+    font-size: 12px;
     line-height: 19px;
     color: #373867;
 }
@@ -112,7 +112,106 @@ aside {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 11.8421px;
+    font-size: 12px;
     line-height: 19px;
     color: #373867;
+}
+.hello {
+    position: absolute;
+    width: 1110px;
+    height: 372px;
+    left: 320px;
+    top: 153px;
+}
+.hello h2 {
+    position: absolute;
+    width: 476px;
+    height: 104px;
+    left: 0px;
+    top: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #373867;
+}
+.hello h3 {
+    position: absolute;
+    width: 453px;
+    height: 23px;
+    left: 0px;
+    top: 135px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+}
+.hello p {
+    position: absolute;
+    width: 378px;
+    height: 120px;
+    left: 0px;
+    top: 174px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #373867;
+    }
+.hello img {
+    
+    position: absolute;
+    width: 570px;
+    height: 372px;
+    left: 540px;
+    top: 0px;
+}
+.hello button {
+    position: absolute;
+    left: 0%;
+    right: 85.59%;
+    top: 87.63%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 3px solid #AACE9B;
+    box-sizing: border-box;
+    border-radius: 5px;
+} 
+.features {
+    position: absolute;
+    width: 1110px;
+    height: 378px;
+    left: 320px;
+    top: 589px;
+}
+.why {
+    position: absolute;
+    width: 1110px;
+    height: 442px;
+    left: 320px;
+    top: 1048px;
+}
+.contact {
+    position: absolute;
+    width: 1110px;
+    height: 432px;
+    right: 320px;
+}
+.history {
+    position: absolute;
+    width: 1110px;
+    height: 567px;
+    left: 320px;
+    top: 2056px;
+}
+.options {
+    position: absolute;
+    width: 1110px;
+    height: 120px;
+    left: 320px;
+    top: 2681px;
 }
