@@ -5,6 +5,7 @@ header {
     left: 320px;
     top: 11px;
 }
+
 h1 {
     position: absolute;
     left: calc(50% - 199px/2 - 391.5px);
@@ -17,5 +18,101 @@ h1 {
     width: 189px;
     height: 32px;
     left: 920px;
-    top: 70px;
+    margin-top: 11px;
 }   
+.icon {
+    display: inline-block;
+}
+aside {
+    position: relative;
+    width: 308px;
+    height: 730px;
+    left: 0px;
+    top: 3px;
+    background: #FEFEFE;
+}
+.menu {
+    position: relative;
+    left: 6.17%;
+    right: 67.53%;
+    top: 5.89%;
+    bottom: 87.26%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.579px;
+    line-height: 37px;
+    color: #373867;
+}
+.touch {
+    position: absolute;
+    left: 5.76%;
+    right: 38.25%;
+    top: 54.66%;
+    bottom: 39.91%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.579px;
+    line-height: 37px;
+    color: #373867;
+}
+.home {
+    position: absolute;
+    left: 6.08%;
+    right: 6.91%;
+    top: 22.63%;
+    bottom: 48.05%;
+}
+.p-touch {
+    position: absolute;
+    left: 5.84%;
+    right: 7.47%;
+    top: 66.16%;
+    bottom: 18.77%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.8421px;
+    line-height: 19px;
+    color: #373867;
+}
+.mail {
+    position: absolute;
+    left: 22.11%;
+    right: 31.73%;
+    top: 83.47%;
+    bottom: 13.51%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.8421px;
+    line-height: 19px;
+    color: #373867;
+}
+.phone {
+    position: absolute;
+    left: 22.11%;
+    right: 31.73%;
+    top: 90.21%;
+    bottom: 6.77%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.8421px;
+    line-height: 19px;
+    color: #373867;
+}
+.ubication {
+    position: absolute;
+    left: 22.11%;
+    right: 11.36%;
+    top: 96.83%;
+    bottom: 0.15%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.8421px;
+    line-height: 19px;
+    color: #373867;
+}
