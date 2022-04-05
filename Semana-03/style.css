@@ -4,6 +4,7 @@ header {
     height: 110px;
     left: 320px;
     top: 11px;
+    border-bottom: 6px solid #AACE9B;
 }
 
 h1 {
@@ -12,15 +13,15 @@ h1 {
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     left: calc(50% - 199px/2 - 391px);
     font-size: 40px;
-    line-height: 47px;
+    line-height: 90px;
     color: #373867;
 }
 .social-red {
     position: absolute;
     width: 189px;
     height: 32px;
-    left: 920px;
-    margin-top: 11px;
+    right: 0px;
+    line-height: 110px;
 }   
 .icon {
     display: inline-block;
@@ -35,26 +36,33 @@ aside {
 }
 .menu {
     position: relative;
-    left: 6.17%;
-    right: 67.53%;
-    top: 5.89%;
-    bottom: 87.26%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
+    left: 6%;
+    right: 67%;
+    top: 6%;
+    bottom: 87%;
     font-weight: 700;
     font-size: 31px;
-    line-height: 37px;
     color: #373867;
+    border-bottom: 4px solid #AACE9B;
+}
+.menu ul {
+    position: relative;
+    left: 6%;
+    right: 7%;
+    top: 22%;
+    bottom: 48%;
+}
+aside li {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    list-style-type: none;
 }
 .touch {
     position: absolute;
-    left: 5.76%;
-    right: 38.25%;
-    top: 54.66%;
-    bottom: 39.91%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 267;
+    height: 110;
+    left: 6%;
+    bottom: 40%;
     font-style: normal;
     font-weight: 700;
     font-size: 31px;
@@ -63,19 +71,17 @@ aside {
 }
 .home {
     position: absolute;
-    left: 6.08%;
-    right: 6.91%;
+    left: 6%;
+    right: 7%;
     top: 22.63%;
     bottom: 48.05%;
 }
 .p-touch {
     position: absolute;
-    left: 5.84%;
-    right: 7.47%;
-    top: 66.16%;
-    bottom: 18.77%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 6%;
+    right: 7%;
+    top: 66%;
+    bottom: 19%;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -84,12 +90,10 @@ aside {
 }
 .mail {
     position: absolute;
-    left: 22.11%;
-    right: 31.73%;
-    top: 83.47%;
-    bottom: 13.51%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 22%;
+    right: 32%;
+    top: 83%;
+    bottom: 14%;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -98,12 +102,10 @@ aside {
 }
 .phone {
     position: absolute;
-    left: 22.11%;
-    right: 31.73%;
-    top: 90.21%;
-    bottom: 6.77%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 22%;
+    right: 32%;
+    top: 90%;
+    bottom: 14%;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -112,17 +114,19 @@ aside {
 }
 .ubication {
     position: absolute;
-    left: 22.11%;
-    right: 11.36%;
-    top: 96.83%;
+    left: 22%;
+    right: 11%;
+    top: 97%;
     bottom: 0.15%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 19px;
     color: #373867;
+}
+aside {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .hello {
     position: absolute;
@@ -183,15 +187,15 @@ aside {
 }
 .hello button {
     position: absolute;
+    width: 160px;
+    height: 64px;
     left: 0%;
-    right: 85.59%;
-    top: 87.63%;
+    bottom: 0%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    bottom: 0%;
+    font-weight: 800;
     background: #FFFFFF;
     border: 3px solid #AACE9B;
-    box-sizing: border-box;
     border-radius: 5px;
     color: #AACE9B
 } 
@@ -218,6 +222,11 @@ aside {
 
 }
 .features h4 {
+    position: relative;
+    width: 96px;
+    height: 20px;
+    left: 138px;
+    top: 11px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -229,6 +238,11 @@ aside {
     color: #373867;
 }
 .features p {
+    position: relative;
+    width: 267px;
+    height: 57px;
+    left: 138px;
+    bottom: 37px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -241,22 +255,30 @@ aside {
 }
 .features-list {
     position: relative;
+    width: 973px;
+    height: 298px;
+    top: 44px;
     display: inline-block;
 }
 .features-item {
     position: relative;
     display: inline-block;
-    width: 400px;
-    height: 200px;
+    width: 423px;
+    height: 145px;
 }
 .why {
     position: absolute;
     width: 1110px;
     height: 442px;
     left: 320px;
-    top: 1048px;
+    top: 1008px;
 }
 .why h3 {
+    position: relative;
+    width: 190px;
+    height: 23px;
+    left: 0px;
+    top: 13px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -290,7 +312,7 @@ aside {
     width: 1110px;
     height: 432px;
     left: 320px;
-    top: 1554px;
+    top: 1650px;
 }
 .contact h3 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
@@ -300,6 +322,17 @@ aside {
     font-size: 20px;
     line-height: 23px;
     color: #373867;
+}
+.complit {
+    position: relative;
+    left: 0%;
+    right: 52%;
+    top: 18%;
+    border-radius: 4px;
+}
+.complit-dates {
+    position: relative;
+    display: inline-block;
 }
 .history {
     position: absolute;
