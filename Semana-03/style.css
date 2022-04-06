@@ -419,3 +419,17 @@ footer{
     top: 2300px;
     left: 50%;
 }
+footer p .location {
+    position: absolute;
+    width: 147px;
+    height: 12px;
+    left: 482px;
+    top: 67px;
+}
+footer p .copyright {
+    position: absolute;
+width: 427px;
+height: 32px;
+left: 342px;
+top: 95px;
+}
