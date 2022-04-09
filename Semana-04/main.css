@@ -1,0 +1,25 @@
+.hello {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    font-size: 48px;
+    line-height: 56px;
+}
+h3 {
+    font-size: 20px;
+    line-height: 23px;
+}
+p {
+    line-height: 24px;
+}
+.hello-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
