@@ -1,0 +1,11 @@
+.social-red {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 16px;
+}
+.footer-p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 21px;
+}
