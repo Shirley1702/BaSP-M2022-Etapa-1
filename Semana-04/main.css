@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap-reverse;
     text-align: center;
-    border-bottom: 2px solid #c4c4c4;
 }
 h2 {
     font-size: 48px;
@@ -15,14 +14,14 @@ h3 {
     line-height: 23px;
     margin-top: 26px;
 }
-p {
+.p-hello {
     font-size: 15px;
     line-height: 24px;
     margin-top: 16px;
     margin-bottom: 26px;
 }
 .hello-description {
-    width: 470px;
+    width: 400px;
 }
 .hello-description button {
     width: 160px;
@@ -35,9 +34,6 @@ p {
     border: 3px solid #AACE9B;
     border-radius: 5px;
     color: #AACE9B
-}
-.features {
-    border-bottom: 2px solid #c4c4c4;
 }
 .features h3 {
     text-align: center;
@@ -64,23 +60,21 @@ p {
 .features-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 32px;
 }
 .features-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 380px;
+}
+.features-item p {
+    margin-top: auto;
 }
 .features-description {
     width: 53%;
-
-}
-.features-description p {
-    font-size: 12px;
-    line-height: 14px;
-}
-.why {
-    border-bottom: 2px solid #c4c4c4;
+    margin-left: 12px;
 }
 .why h3 {
     text-align: center;
@@ -89,12 +83,75 @@ p {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 32px;
 }
 .columns-block {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 32px;
+    width: 375px;
 }
 .columns-block img {
     width: 400px;
+    height: 300px;
+}
+.columns-description {
+    margin-top: 15px;
+}
+.columns-description p {
+    margin-top: 10px;
+}
+.contact h3 {
+    text-decoration-line: underline;
+    text-align: center;
+}
+.box {
+    width: 100%;
+    color: #373867;
+}
+.complit-dates {
+    margin-top: 20px;
+}
+.massagge-box {
+    width: 100%;
+    height: 110px;
+    margin-top: 20px;
+}
+.bottons {
+    display: flex;
+    justify-content: space-between;
+}
+.contact button {
+    width: 200px;
+    height: 47px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background: #AACE9B;
+    border: 3px solid #AACE9B;
+    border-radius: 5px;
+    color: #373867;
+}
+.history h4 {
+    margin-bottom: 20px;
+    margin-top: 22px;
+}
+.history img {
+    width: 364px;
+    height: 210px;
+    margin-bottom: 26px;
+}
+.moments {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.moments p {
+    width: 364px;
 }

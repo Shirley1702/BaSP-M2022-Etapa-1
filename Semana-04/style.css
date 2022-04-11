@@ -17,3 +17,11 @@ h4 {
     font-size: 14px;
     line-height: 23px;
 }
+p {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+}
+section {
+    border-bottom: 2px solid #c4c4c4;
+}
