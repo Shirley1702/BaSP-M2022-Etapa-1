@@ -28,3 +28,14 @@ section:not(:last-child) {
 main {
     border-bottom: 6px solid #AACE9B;
 }
+select {
+    width: 45%;
+    padding: 4px 20px;
+    margin: 2px 27px 25px 0px;
+    box-sizing: border-box;
+}
+@media (min-width:768px) {
+    body {
+        margin-left: 19px;
+        margin-right: 19px;}    
+}
