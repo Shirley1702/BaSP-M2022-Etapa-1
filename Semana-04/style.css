@@ -42,8 +42,18 @@ aside {
         margin-left: 19px;
         margin-right: 19px;}    
 }
-/* @media (min-width:768px) {
-    .columns-block:not(:) {
-        border-left: 1px solid #c4c4c4;
+@media (min-width:768px) {
+    .moments p {
+        text-align: left;
     }
-} */
+}
+@media (min-width:768px) {
+    .columns-href ol {
+        text-align: left;
+    }
+}
+@media (min-width:1440px) {
+    .hello-description {
+        text-align: left;
+    }
+}

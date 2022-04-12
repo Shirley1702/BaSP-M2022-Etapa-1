@@ -112,7 +112,7 @@ h3 {
 .first-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-between;
 }
 .box {
     width: 350px;
@@ -131,9 +131,8 @@ select {
     margin-top: 20px;
     width: 350px;
 }
-.bottons {
-    display: flex;
-    justify-content: space-between;
+.botton-send {
+    margin-right: 26px;    
 }
 .contact button {
     width: 160px;
@@ -150,16 +149,14 @@ select {
     color: #373867;
 }
 .history {
-    padding-bottom: 32px;
+    padding-bottom: 6px;
 }
 .history h4 {
     margin-bottom: 20px;
-    margin-top: 22px;
 }
 .history img {
     width: 350px;
     height: 156px;
-    margin-bottom: 26px;
 }
 .moments {
     display: flex;
@@ -167,9 +164,11 @@ select {
     text-align: center;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 26px;
+    margin-top: 22px;
 }
 .moments p {
-    width: 350px;
+    width: 50%;
 }
 .options {
     display: flex;
