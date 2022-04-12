@@ -109,17 +109,27 @@ h3 {
     text-decoration-line: underline;
     text-align: center;
 }
+.first-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .box {
     width: 350px;
-    color: #373867;
 }
 .complit-dates {
     margin-top: 20px;
+}
+select {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
 }
 .massagge-box {
     width: 350px;
     height: 110px;
     margin-top: 20px;
+    width: 350px;
 }
 .bottons {
     display: flex;
