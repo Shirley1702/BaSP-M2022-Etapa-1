@@ -1,3 +1,4 @@
+/* section hello */
 .hello {
     margin-top: 16px;
     display: flex;
@@ -38,6 +39,19 @@ h3 {
     border-radius: 5px;
     color: #AACE9B
 }
+@media (min-width:1440px) {
+    .hello-description {
+        text-align: left;
+        width: 50%;
+    }
+}
+@media (min-width:1440px) {
+    .hello-img img {
+        width: 553px;
+        height: 342px;
+    }
+}
+/* section Features */
 .features h3 {
     text-align: center;
 }
@@ -79,6 +93,7 @@ h3 {
     width: 53%;
     margin-left: 12px;
 }
+/* section why */
 .why h3 {
     text-align: center;
 }
@@ -105,6 +120,7 @@ h3 {
 .columns-description p {
     margin-top: 10px;
 }
+/* section contact */
 .contact h3 {
     text-decoration-line: underline;
     text-align: center;
@@ -148,11 +164,13 @@ select {
     border-radius: 5px;
     color: #373867;
 }
+/* section .history */
 .history {
     padding-bottom: 6px;
 }
 .history h4 {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .history img {
     width: 350px;
@@ -168,8 +186,15 @@ select {
     margin-top: 22px;
 }
 .moments p {
-    width: 50%;
+    margin-top: 10px;
 }
+@media (min-width:768px) {
+    .moments p {
+        text-align: left;
+        width: 60%;
+    }
+}
+/* section options */
 .options {
     display: flex;
     flex-wrap: wrap;
@@ -185,3 +210,9 @@ select {
 .columns-href h3 {
     margin-bottom: 10px;
 }
+@media (min-width:768px) {
+    .columns-href ol {
+        text-align: left;
+    }
+}
+/* ---------> footer */

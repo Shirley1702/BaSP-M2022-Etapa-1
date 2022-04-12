@@ -34,6 +34,10 @@ select {
     margin: 2px 27px 25px 0px;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: #373867;
+}
 aside {
     display: none;
 }
@@ -42,18 +46,13 @@ aside {
         margin-left: 19px;
         margin-right: 19px;}    
 }
-@media (min-width:768px) {
-    .moments p {
-        text-align: left;
-    }
-}
-@media (min-width:768px) {
-    .columns-href ol {
-        text-align: left;
-    }
+@media (min-width:1440px) {
+    body {
+        margin-left: 300px;
+        margin-right: 20px;}    
 }
 @media (min-width:1440px) {
-    .hello-description {
-        text-align: left;
-    }
+    aside { 
+        display: contents;
+    }  
 }
