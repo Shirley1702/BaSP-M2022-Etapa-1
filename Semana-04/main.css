@@ -161,6 +161,7 @@ h3 {
         border: 1px solid #c4c4c4;
     }
     .divider-line-desk {
+        display: contents;
         height: 329px;
         width: 0;
         border: 1px solid #c4c4c4;
@@ -242,9 +243,17 @@ select {
     width: 350px;
     height: 156px;
 }
-.moments {
+.moments-1 {
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 26px;
+    margin-top: 22px;
+}
+.moments-2 {
+    display: flex;
+    flex-direction: row-reverse;
     text-align: center;
     justify-content: space-around;
     align-items: center;

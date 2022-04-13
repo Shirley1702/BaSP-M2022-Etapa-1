@@ -5,11 +5,14 @@ And he has asked us to develop a website which we will call “Trackgenix".
 In this project we start to develop the page with html.
 ## Semana-03
 In this project we start to develop the page with css.
+## Semana-04
+In this project we start to develop the page with flex box.
 
 ## Order of use
 ```
-1. Download Semana-03 content
-2. Navigate in index.html
+1. Enter the repository "BaSP-M2022-Etapa-1" and click on setting
+2. Search for GitHub Pages
+3. Enter the page and add /Seamana-04/ of the htrl
 ```
 ### Created by 
 Shirley Seaton
