@@ -104,6 +104,11 @@ h3 {
     justify-content: space-around;
     margin-bottom: 32px;
 }
+.divider-line {
+    height: 329px;
+    width: 1px;
+    border: 1px solid #c4c4c4
+}
 .columns-block {
     display: flex;
     flex-wrap: wrap;
@@ -119,6 +124,14 @@ h3 {
 }
 .columns-description p {
     margin-top: 10px;
+}
+@media (min-width:1440px) {
+    .columns-block img {
+        width: 255px;
+    }
+    .columns-block p {
+        width: 255px;
+    }
 }
 /* section contact */
 .contact h3 {

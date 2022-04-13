@@ -51,8 +51,3 @@ aside {
         margin-left: 300px;
         margin-right: 20px;}    
 }
-@media (min-width:1440px) {
-    aside { 
-        display: contents;
-    }  
-}
