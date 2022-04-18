@@ -1,25 +1,25 @@
 console.log ('Exercises: For');
-/*Crear un array que contenga 5 palabras y recorrer dicho array 
-utilizando un bucle for de JavaScript para mostrar una alerta
-utilizando cada una de las palabras.*/
+/*a: Create an array containing 5 words and loop through that array
+using a JavaScript for loop to display an alert
+using each word.*/
 console.log ('-exercise 05.a:');
 var clubs = ['river', 'boca', 'central', 'nob', 'independiente'];
 for (var i=0; i<clubs.length; i++) {
     alert (clubs[i]);
 }
 
-/*Al array anterior convertir la primera letra de cada 
-palabra en mayúscula y mostrar una alerta por cada palabra modificada.*/
+/*b: To the previous array convert the first letter of each
+capitalized word and display an alert for each modified word.*/
 console.log ('-exercise 05.b:');
 for (var i=0; i<clubs.length; i++) {
     clubs[i] = clubs[i].substring(0, 1).toUpperCase() + clubs[i].substring(1);
     alert (clubs[i])    
 }
 
-/*Crear una variable llamada “sentence” que tenga un string vacío, 
-luego al array del punto a) recorrerlo con un bucle for para ir 
-guardando cada palabra dentro de la variable sentence. Al final 
-mostrar una única alerta con la cadena completa.*/
+/*c: Create a variable called "sentence" that has an empty string,
+then to the array at point a) iterate through it with a for loop to go
+saving each word inside the sentence variable. At the end
+display a single alert with the full string.*/
 console.log ('-exercise 05.c:');
 var sentence = '';
 for (var i=0; i<clubs.length; i++){
@@ -27,11 +27,11 @@ for (var i=0; i<clubs.length; i++){
 }
 alert (sentence);
 
-/*Crear una array vacío y con un bucle for de 10 repeticiones. 
-Llenar el array con el número de la repetición, es decir que al 
-final de la ejecución del bucle for debería haber 10 elementos 
-dentro del array, desde el número 0 hasta al número 9. Mostrar 
-por la consola del navegador el array final (utilizar console.log).*/
+/*d: Create an empty array and with a for loop of 10 repetitions.
+Fill the array with the number of the repetition, that is to say that at
+end of the execution of the for loop there should be 10 elements
+within the array, from number 0 to number 9. Show
+by the browser console the final array (use console.log).*/
 console.log ('-exercise 05.c:');
 var sport = [];
 for (var i=0; i<10; i++){
