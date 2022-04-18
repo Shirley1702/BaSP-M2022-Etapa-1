@@ -40,15 +40,15 @@ var stringE = 'Radium Rocket';
 var firstSpace = stringE.indexOf(' ');
 console.log (firstSpace);
 
-/*f: Crear una variable de tipo string con al menos 2 palabras largas 
-(10 caracteres y algún espacio entre medio). Utilizar los métodos de los 
-ejercicios anteriores para generar un nuevo string que tenga la primera 
-letra de ambas palabras en mayúscula y las demás letras en minúscula 
-(utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +)*/
+/*f: Create a variable of type string with at least 2 words long
+(10 characters and some space in between). Use the methods of
+previous exercises to generate a new string that has the first
+letter of both words capitalized and the other letters lowercase
+(use indexOf, substring, toUpperCase, toLowerCase and the + operator)*/
 console.log ('-exercise 02.f:');
 var stringF = 'congratulations developers'
-var firstWord = (stringF.substring(0, 1).toUpperCase()) + (stringF.substring(1, 16).toLocaleLowerCase())
+var firstWord = (stringF.substring(0, 1).toUpperCase()) + (stringF.substring(1, 16).toLocaleLowerCase());
 var spaceStringF = stringF.indexOf(' ');
 var secondWord = (stringF.substring(16, 17).toUpperCase()) + (stringF.substring(17).toLocaleLowerCase());
-var resultF = firstWord + secondWord
-console.log (resultF)
+var resultF = firstWord + secondWord;
+console.log (resultF);
