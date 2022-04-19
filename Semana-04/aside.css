@@ -64,16 +64,26 @@ aside {
     width: 185px;
     height: 60px;
     padding-top: 50px;
-}
-.getin p {
-    font-size: 12;
-    margin-top: 21px;
-    margin-bottom: 52px;
+    margin-bottom: 20px;
 }
 .getin ul {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: start;
+    list-style: none;
+    margin-top: 50px;
+    height: 130px;
+}
+.getin li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: ;
+}
+.getin ul li a:not(:first-child) {
+    margin-right: 32px;
+    text-decoration: none;
+    color: #AACE9B;
 }
 @media (min-width:1440px) {
     aside { 

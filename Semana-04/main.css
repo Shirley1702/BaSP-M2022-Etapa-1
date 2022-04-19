@@ -236,6 +236,7 @@ select {
 .history h4 {
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 .history img {
     width: 350px;
