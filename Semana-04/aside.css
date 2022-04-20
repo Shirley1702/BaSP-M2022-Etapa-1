@@ -1,6 +1,9 @@
 aside {
-    position: relative;
-    width: 308px;
+    display: none;
+}
+aside {
+    position: fixed;
+    width: 290px;
     height: 730px;
     left: 0px;
     top: 3px;
@@ -8,7 +11,7 @@ aside {
 }
 .home {
     position: absolute;
-    top: 43px;
+    top: 20px;
     left: 18px;
 }
 .home h2 {
@@ -36,14 +39,13 @@ aside {
 .home li {
     margin-top: 40px;
     margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #C4C4C4;
+    width: 268px;
     list-style-type: none;
     font-size: 13px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #C4C4C4;
-    width: 268px;
-    
 }
 .getin {
     position: absolute;
@@ -56,15 +58,15 @@ aside {
 .getin h2 {
     position: relative;
     left: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 31px;
-    color: #373867;
-    border-bottom: 4px solid #AACE9B;
     width: 185px;
     height: 60px;
     padding-top: 50px;
     margin-bottom: 20px;
+    border-bottom: 4px solid #AACE9B;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 31px;
+    color: #373867;
 }
 .getin ul {
     display: flex;
@@ -78,7 +80,6 @@ aside {
 .getin li {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: ;
 }
 .getin ul li a:not(:first-child) {
     margin-right: 32px;
@@ -87,6 +88,6 @@ aside {
 }
 @media (min-width:1440px) {
     aside { 
-        display: contents;
+        display: block;
     }  
 }

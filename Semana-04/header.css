@@ -24,16 +24,16 @@ ul {
     justify-content: space-between;
 }
 h1 {
+    width: 300px;
     font-size: 47px;
     line-height: 56px;
-    width: 300px;
 }
 .hambur {
-    font-size: 120%;
-    margin-right: 20px;
-    margin-top: auto;
     width: 30px;
     height: 30px;
+    margin-right: 20px;
+    margin-top: auto;
+    font-size: 120%;
 }
 .social-red .icon img {
     width: 32px;
