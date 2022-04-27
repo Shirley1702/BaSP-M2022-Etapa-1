@@ -1,0 +1,52 @@
+main {
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #373867;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-inline: 10px;
+    margin-block-end: 30px;
+}
+form div input {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.button-create {
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    background: #FFFFFF;
+    border: 3px solid #AACE9B;
+    border-radius: 5px;
+    color: #AACE9B
+}
+form div span {
+    color: red
+    
+}

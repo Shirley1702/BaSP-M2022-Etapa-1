@@ -7,6 +7,7 @@
         <title>Trackgenix</title>
         <script src="https://kit.fontawesome.com/8bedfba391.js" crossorigin="anonymous">
         </script>
+        <script src="/javascript/sign-up.js"></script>
         <link rel="stylesheet" href="/styles/reset.css"/>
         <link rel="stylesheet" href="/styles/style.css"/>
         <link rel="stylesheet" href="/styles/header.css"/>
@@ -94,7 +95,72 @@
             </div>
         </aside>
         <main>
-            
+            <h2>
+                Sign up
+            </h2>
+            </section>
+            <form class="complit">
+                <div>
+                    <label for="name">Name:</label>
+                    <input class="name" type="name" id="name" name="Name" placeholder="Name">
+                    <span class="error-name"></span>
+                </div>
+                <div>
+                    <label for="L-name">Last Name:</label>
+                    <input class="last-name" type="text" id="last-name" name="Last Name" placeholder="Last Name">
+                    <span class="error-lastname"></span>
+                </div>
+                <div>
+                    <label for="dni">D.N.I.:</label>
+                    <input class="dni" type="text" id="dni" name="dni" placeholder="DNI">
+                    <span class="error-dni"></span>
+                </div>
+                <div>
+                    <label for="date-birth">Date of birth:</label>
+                    <input class="date-birth" type="date" id="date-birth" name="date-birth" placeholder="dd/mm/aaaa">
+                <span class="error-datebirth"></span>
+                </div>                
+                <div>
+                    <label for="cel">Celphone:</label>
+                    <input class="cel" type="text" id="cel" name="cel" placeholder="341 156 849 849">
+                    <span class="error-cel"></span>
+                </div>                
+                <div>
+                    <label for="address">Address:</label>
+                    <input class="address" type="text" id="address" name="address" placeholder="Mendoza 3600">
+                    <span class="error-address"></span>
+                </div>                
+                <div>
+                    <label for="locality">Locality:</label>
+                    <input class="locality" type="text" id="locality" name="locality" placeholder="Locality">
+                    <span class="error-locality"></span>
+                </div>
+                <div>
+                    <label for="postal">Postal Code:</label>
+                    <input class="postal" type="text" id="postal" name="postal" placeholder="Postal Code">
+                    <span class="error-postal"></span>
+                </div>                
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input class="email" type="text" id="email" name="email" placeholder="aaaaaa@email.com">
+                    <span class="error-email"></span>
+                </div>                
+                <div>
+                    <label for="password">Password:</label>
+                    <input class="password" type="text" id="password" name="password" placeholder="Password">
+                    <span class="error-password"></span>
+                </div>                
+                <div>
+                    <label for="password2">Repeat password:</label>
+                    <input class="box" type="text" id="password2" name="password2" placeholder="Repeat password">
+                    <span class="error-password2"></span>
+                </div>                
+            </form>
+            <div class="button-container">
+                <button class="button-create" type="submit">
+                    Create
+                </button>
+            </div>
         </main>
         <footer>
             <div class="footer-a">
