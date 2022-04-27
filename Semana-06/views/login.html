@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="/styles/login.css"/>
         <link rel="stylesheet" href="/styles/aside.css"/>
         <link rel="stylesheet" href="/styles/footer.css"/>
+        <script src="/javascript/login.js"></script>
     </head>
     <body>
         <header>
@@ -94,7 +95,43 @@
             </div>
         </aside>
         <main>
-            
+            <h2 class="login">
+                Login
+            </h2>
+            <Form class="form-login">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input class="box" type="text" id="email" name="email" placeholder="aaaaaa@email.com">
+                    <span class="error-email"></span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="box" type="text" id="password" name="password" placeholder="Password">
+                    <span class="error-password"></span>
+                </div>
+            </Form>
+            <div class="remember-me">
+                <i class="fa-solid fa-square-check"></i>
+                <button class="button-remember-me">
+                    Remember me
+                </button>
+            </div>
+            <div class="buttons">
+                <button class="button-continue">
+                    Continue
+                </button>
+                <a href="/views/sign-up.html">
+                    <button class="button-new-user">
+                        New user
+                    </button>
+                </a>
+            </div>
+            <div class="forgot">
+                <button class="button-forgot-p">
+                    Forgot your password
+                </button>
+                <i class="fa-solid fa-question"></i>
+            </div>
         </main>
         <footer>
             <div class="footer-a">
