@@ -269,7 +269,7 @@ window.onload = function (){
         }
         else {
             for (i = 0; i < password.value.length; i++) {
-                if (number.includes(password.value[i]) || letters.includes(password.value[i])) {
+                if (number.includes(password.value[i]) && letters.includes(password.value[i])) {
                     errorPassword[0].textContent = 'requires numbers and letters';
                 }
             }
@@ -292,10 +292,20 @@ window.onload = function (){
             errorPassword2[0].textContent = 'repeat your passwprd';
         }
         else if (password2.value != password.value) {
-            errorPassword2[0].textContent = 'error en tipeo';
+            errorPassword2[0].textContent = 'error';
         }
     }
     function password2Focus() {
         errorPassword2[0].textContent = '';
+    }
+// botton
+
+
+    document.getElementById('button-create').onclick = function () {
+        if (errorName[0], errorLastname[0], errorDatebi[0], errorDni[0], errorCel[0],
+            errorLocality[0], errorAddress[0], errorPostal[0],
+            errorEmail[0], errorPassword[0], errorPassword2[0]) {
+            alert('You must complete the entire form');
+        }
     }
 }
