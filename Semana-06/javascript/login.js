@@ -50,5 +50,9 @@ window.onload = function () {
     function passwordFocus() {
         errorPassword[0].textContent = '';
     }
-
+    document.getElementById('continue').onclick = function () {
+        if (errorEmail[0], errorPassword[0]) {
+            alert('You must complete the entire form');
+        }
+    }
 }
