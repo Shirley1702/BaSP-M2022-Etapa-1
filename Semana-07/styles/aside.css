@@ -1,0 +1,92 @@
+aside {
+    display: none;
+}
+aside {
+    position: fixed;
+    width: 290px;
+    height: 730px;
+    left: 0px;
+    top: 3px;
+    background: #FEFEFE;
+}
+.home {
+    position: absolute;
+    top: 20px;
+    left: 18px;
+}
+.home h2 {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 31px;
+    color: #373867;
+    border-bottom: 4px solid #AACE9B;
+    width: 82px;
+    height: 60px;
+}
+.home ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 0px;
+    top: 62px;
+    bottom: 48%;
+
+}
+.home li {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #C4C4C4;
+    width: 268px;
+    list-style-type: none;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.getin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    top: 399px;
+    left: 18px;
+}
+.getin h2 {
+    position: relative;
+    left: 0px;
+    width: 185px;
+    height: 60px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #AACE9B;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 31px;
+    color: #373867;
+}
+.getin ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    list-style: none;
+    margin-top: 50px;
+    height: 130px;
+}
+.getin li {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.getin ul li a:not(:first-child) {
+    margin-right: 32px;
+    text-decoration: none;
+    color: #AACE9B;
+}
+@media (min-width:1440px) {
+    aside { 
+        display: block;
+    }  
+}

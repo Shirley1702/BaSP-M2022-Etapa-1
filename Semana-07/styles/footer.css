@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin: 16px;
+  }
+.footer-a {
+    display: flex;
+    justify-content: space-between;
+    width: 315px;
+    margin-bottom: 20px;
+}
+footer p {
+    text-align: center;
+}

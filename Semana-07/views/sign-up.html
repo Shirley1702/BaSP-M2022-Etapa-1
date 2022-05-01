@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix</title>
+        <script src="https://kit.fontawesome.com/8bedfba391.js" crossorigin="anonymous">
+        </script>
+        <script src="/javascript/sign-up.js"></script>
+        <link rel="stylesheet" href="../styles/reset.css"/>
+        <link rel="stylesheet" href="../styles/style.css"/>
+        <link rel="stylesheet" href="../styles/header.css"/>
+        <link rel="stylesheet" href="../styles/sign-up.css"/>
+        <link rel="stylesheet" href="../styles/aside.css"/>
+        <link rel="stylesheet" href="../styles/footer.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container-title">
+                <div class="hambur">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <div id="trackgenix">
+                    <h1>Trackgenix</h1>
+                </div>
+            </div>
+            <nav>
+                <ul class="social-red">
+                    <li class="icon">
+                        <a href="#">
+                            <img src="../assets/icons/linkedin.png"/>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="#">
+                            <img src="../assets/icons/Twitter-logo.png"/>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="#">
+                            <img src="../assets/icons/Facebook.png"/>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="#">
+                            <img src="../assets/icons/instagram-logo.png"/>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <div class="home">
+                <h2>Menu</h2>
+                <ul>
+                    <li>
+                        <a href="/views/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/views/sign-up.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="/views/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="getin">
+                <h2>Get in touch</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled 
+                    it to make a type specimen book.
+                </p>
+                <ul>
+                    <li>
+                        <p><a href="mailto:informacion@gmail.com" class="mail">informacion@gmail.com</a></p>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <p class="phone">
+                            (0341) 123-4567
+                        </p>
+                        <a href="#"><i class="fa-solid fa-phone"></i></i></a>
+                    </li>
+                    <li>
+                        <p class="location">
+                            Mendoza 1234, Rosario, Argentina
+                        </p>
+                        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <h2>
+                Sign up
+            </h2>
+            </section>
+            <form class="complit">
+                <div>
+                    <label for="name">Name:</label>
+                    <input class="name" type="text" id="name" name="Name" placeholder="Name">
+                    <span class="error-name"></span>
+                </div>
+                <div>
+                    <label for="L-name">Last Name:</label>
+                    <input class="last-name" type="text" id="last-name" name="Last Name" placeholder="Last Name">
+                    <span class="error-lastname"></span>
+                </div>
+                <div>
+                    <label for="dni">D.N.I.:</label>
+                    <input class="dni" type="number" id="dni" name="dni" placeholder="DNI">
+                    <span class="error-dni"></span>
+                </div>
+                <div>
+                    <label for="date-birth">Date of birth:</label>
+                    <input class="date-birth" type="date" id="date-birth" name="date-birth" placeholder="dd/mm/aaaa">
+                <span class="error-datebirth"></span>
+                </div>                
+                <div>
+                    <label for="cel">Celphone:</label>
+                    <input class="cel" type="number" id="cel" name="cel" placeholder="341 156 849 849">
+                    <span class="error-cel"></span>
+                </div>                
+                <div>
+                    <label for="address">Address:</label>
+                    <input class="address" type="text" id="address" name="address" placeholder="Mendoza 3600">
+                    <span class="error-address"></span>
+                </div>                
+                <div>
+                    <label for="locality">Locality:</label>
+                    <input class="locality" type="text" id="locality" name="locality" placeholder="Locality">
+                    <span class="error-locality"></span>
+                </div>
+                <div>
+                    <label for="postal">Postal Code:</label>
+                    <input class="postal" type="number" id="postal" name="postal" placeholder="Postal Code">
+                    <span class="error-postal"></span>
+                </div>                
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input class="email" type="text" id="email" name="email" placeholder="aaaaaa@email.com">
+                    <span class="error-email"></span>
+                </div>                
+                <div>
+                    <label for="password">Password:</label>
+                    <input class="password" type="password" id="password" name="password" placeholder="Password">
+                    <span class="error-password"></span>
+                </div>                
+                <div>
+                    <label for="password2">Repeat password:</label>
+                    <input class="box" type="password" id="password2" name="password2" placeholder="Repeat password">
+                    <span class="error-password2"></span>
+                </div>                
+            </form>
+            <div class="button-container">
+                <button class="button-create" type="button" id="button-create">
+                    Create
+                </button>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-a">
+                <a href="#">
+                    <img src="../assets/icons/linkedin.png" width="30"/>
+                </a>
+                <a href="#">
+                    <img src="../assets/icons/Twitter-logo.png" width="30"/>
+                </a>
+                <a href="#">
+                    <img src="../assets/icons/Facebook.png" width="30"/>
+                </a>
+                <a href="#">
+                    <img src="../assets/icons/instagram-logo.png" width="30"/>
+                </a>
+            </div>
+            <p class="location">Rosario, Argentina</p>
+            <p class="copyright">Copyright © 2022 Trackgenix SA. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
