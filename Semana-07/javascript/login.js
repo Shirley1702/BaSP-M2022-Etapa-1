@@ -24,13 +24,13 @@ window.onload = function () {
         var validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if (email.value === '') {
             errorEmail[0].textContent = 'please enter a email';
-            emailInput = false
+            emailInput = false;
         }
         else if (!validEmail.test(email.value)) {
             errorEmail[0].textContent = 'please enter a valid email';
-            emailInput = false
+            emailInput = false;
         }
-        else emailInput = true
+        else emailInput = true;
     }
     function emailFocus() {
         errorEmail[0].textContent = '';
@@ -47,18 +47,18 @@ window.onload = function () {
     function passwordBlur() {
         if (password.value === '') {
             errorPassword[0].textContent = 'please enter your password';
-            passwordInput = false
+            passwordInput = false;
         }
         else if (password.value.length < 8) {
             errorPassword[0].textContent = '8 or more characters with numbers and letters';
-            passwordInput = false
+            passwordInput = false;
         }
         else
             if (!validatePass()) {
                 errorPassword[0].textContent = 'error';
-                passswordInput = false
+                passwordInput = false;
             }
-            else passwordInput = true
+            else passwordInput = true;
     }
     function validatePass() {
 
@@ -100,11 +100,7 @@ window.onload = function () {
     function passwordFocus() {
         errorPassword[0].textContent = '';
     }
-    document.getElementById('continue').onclick = function () {
-        if (errorEmail[0], errorPassword[0]) {
-            alert('You must complete the entire form');
-        }
-    }
+    
     // botton
     
     var emailInput = true
@@ -112,10 +108,32 @@ window.onload = function () {
     
     
     document.getElementById('button-login').onclick = function () {
-        if (emailInput && passwordInput == true) {
-            alert ('login');
+        if (emailInput != false, passwordInput != false) {
+            alert('login');
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email.value
+                + '&password=' + password.value)
+                .then(function (response) {
+                    return response.json()
+                })
+                .then(function (jsonResponse) {
+                    console.log("json", jsonResponse)
+                    if (jsonResponse.success) {
+                        console.log("Good", jsonResponse)
+                        alert('logged');
+                        /* < --- LÓGICA CUANDO LA REQUEST ES EXITOSA Y MOSTRAR UN ALERT --- > */
+                    } else {
+                        throw jsonResponse
+                    }
+                })
+                .catch(function (error) {
+                    console.warn('Error', error)
+                    alert('error del feth');
+                    /*  < --- LÓGICA CUANDO LA REQUEST SALE MAL --- > */
+                })
         }
-        else alert ('error')
+        else alert('error')
     }
-     
+
+
+
 }

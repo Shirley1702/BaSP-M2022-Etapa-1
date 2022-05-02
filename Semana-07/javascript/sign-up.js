@@ -1,8 +1,8 @@
 window.onload = function (){
-  var form = document.querySelector ('.complit');
+  /* var form = document.querySelector ('.complit');
   console.log (form);
   var input = document.querySelectorAll ('input');
-  console.log (input);
+  console.log (input); */
   
   var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q',
   'r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L',
@@ -377,24 +377,47 @@ window.onload = function (){
     }
     // botton
     
-    var nameInput = false
-    var lastNameInput = false
-    var dniInput = false
-    var datebiInput = false
-    var celInput = false
-    var addressInput = false
-    var localityInput = false
-    var postalInput = false
-    var emailInput = false
-    var passwordInput = false
-    var password2Input = false
+    var nameInput = true
+    var lastNameInput = true
+    var dniInput = true
+    var datebiInput = true
+    var celInput = true
+    var addressInput = true
+    var localityInput = true
+    var postalInput = true
+    var emailInput = true
+    var passwordInput = true
+    var password2Input = true
 
     document.getElementById('button-create').onclick = function () {
-        if (!nameInput || !lastNameInput || !dniInput || !datebiInput || !celInput
-            || !addressInput || !localityInput || !postalInput || !emailInput ||
-            !passwordInput || !password2Input) {
-            alert('ok');
+        if (nameInput && lastNameInput && dniInput && datebiInput && celInput
+            && addressInput && localityInput && postalInput && emailInput &&
+            passwordInput && password2Input) {
+            alert('sign up');
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/sign-up?name=' + name.value
+                + '&lastName=' + lastName.value + '&dni=' + dni.value + '&datebi=' + dateBi.value 
+                + '&cel=' + cel.value + '&address=' + address.value + '&locality=' + locality.value 
+                + '&postal=' + postal.value + '&email=' + email.value + '&password=' + password.value 
+                + '&password2=' + password2.value )
+                .then(function (response) {
+                    return response.json()
+                })
+                .then(function (jsonResponse) {
+                    console.log("json", jsonResponse)
+                    if (jsonResponse.success) {
+                        console.log("Good", jsonResponse)
+                        alert('logged');
+                        /* < --- LÓGICA CUANDO LA REQUEST ES EXITOSA Y MOSTRAR UN ALERT --- > */
+                    } else {
+                        throw jsonResponse
+                    }
+                })
+                .catch(function (error) {
+                    console.warn('Error', error)
+                    alert('error del feth');
+                    /*  < --- LÓGICA CUANDO LA REQUEST SALE MAL --- > */
+                })
         }
-        else alert ('false');
+        else alert('error');
     }
 }
