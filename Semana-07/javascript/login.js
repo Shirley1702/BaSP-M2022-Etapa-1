@@ -101,37 +101,35 @@ window.onload = function () {
         errorPassword[0].textContent = '';
     }
     
-    // botton
-    
-    var emailInput = true
-    var passwordInput = true
-    
+    // button    
     
     document.getElementById('button-login').onclick = function () {
-        if (emailInput != false, passwordInput != false) {
-            alert('login');
+        emailBlur ();
+        passwordBlur ();
+        if (emailInput != false && passwordInput != false ) {
+            alert('Login');
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email.value
                 + '&password=' + password.value)
                 .then(function (response) {
-                    return response.json()
+                    return response.json();
                 })
                 .then(function (jsonResponse) {
-                    console.log("json", jsonResponse)
+                    console.log("json", jsonResponse);
                     if (jsonResponse.success) {
-                        console.log("Good", jsonResponse)
-                        alert('logged');
-                        /* < --- LÓGICA CUANDO LA REQUEST ES EXITOSA Y MOSTRAR UN ALERT --- > */
+                        console.log(jsonResponse.msg);
+                        alert('Be logged in' + '\n' + jsonResponse.msg);
                     } else {
                         throw jsonResponse
                     }
                 })
                 .catch(function (error) {
-                    console.warn('Error', error)
-                    alert('error del feth');
-                    /*  < --- LÓGICA CUANDO LA REQUEST SALE MAL --- > */
+                    console.warn('Error', error);
+                    alert('Error' + '\n' + error.msg);
                 })
         }
-        else alert('error')
+        else alert('The fields are incorrect or you are not logged in')
+
+        
     }
 
 
