@@ -441,10 +441,30 @@ window.onload = function () {
                     /*  < --- LÓGICA CUANDO LA REQUEST SALE MAL --- > */
                 })
         }
-        else alert('unsuccessful login\n Name: ' + name.value + '\nLast Name:' + lastName.value + '\nD.N.I: ' 
-        + dni.value + '\nDate of birth: ' + dateBi.value + '\nCelphone: ' + cel.value + '\nAddress: ' + address.value 
-        + '\nLocality: ' + locality.value + '\nPostal code: ' + postal.value + '\nEmail: ' + email.value +
-        '\nPassword: ' + password.value + '\nRepeat Password: ' + 'It is not the same');
+        else if(!nameInput){
+            alert('Error: Name incorrect \nName:' + name.value);
+        }
+        else if(!lastNameInput){
+            alert('Error: Last Name incorrect \nLast Name:' + lastName.value);
+        }
+        else if(!dniInput){
+            alert('Error: DNI incorrect \nDNI:' + dni.value);
+        }
+        else if(!datebiInput){
+            alert('Error: Date of Birth incorrect \nDate of birth:' + datebiBlur.value);
+        }
+        else if(!celInput){
+            alert('Error: Phone incorrect \nPhone:' + cel.value);
+        }
+         else if(!localityInput){
+            alert('Error: Location incorrect \nLocation:' + locality.value);
+        }
+        else if(!addressInput){
+            alert('Error: Address incorrect \nAddress:' + address.value);
+        }
+        else if(!postalInput){
+            alert('Error: Postal Code incorrect \nPostal Code:' + postal.value);
+        }
     }
     
     /* input */
