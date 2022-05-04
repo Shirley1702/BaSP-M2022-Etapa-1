@@ -18,8 +18,9 @@ In this week we must extend the forms of week 06 so that pressing the confirmati
 ```
 1. Enter the repository "BaSP-M2022-Etapa-1" and click on setting
 2. Search for GitHub Pages
-3. And enter the link: https://shirley1702.github.io/BaSP-M2022-Etapa-1/Semana-07/
+3. And enter the link: https://shirley1702.github.io/BaSP-M2022-Etapa-1/Semana-07/Views/index.html
 ```
+
 ### Created by 
 Shirley Seaton
 ### Contact information
