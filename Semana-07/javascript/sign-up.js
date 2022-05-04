@@ -1,9 +1,5 @@
 window.onload = function (){
-  /* var form = document.querySelector ('.complit');
-  console.log (form);
-  var input = document.querySelectorAll ('input');
-  console.log (input); */
-  
+    
   var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q',
   'r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L',
   'M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z']
@@ -57,7 +53,7 @@ window.onload = function (){
             }
         }
         if (lastName.value === '') {
-            errorLastname[0].textContent = 'please enter your name';
+            errorLastname[0].textContent = 'please enter your last name';
             lastNameInput = false;
         }
         else if (lastName.value.length < 4) {
@@ -125,6 +121,21 @@ window.onload = function (){
         errorDatebi[0].textContent = '';
     }
 
+ // Transforms from date input field to MM/DD/YYYY
+    function transformDateRequest(date) {
+        var dateTransformed = date.substring(5, 7) 
+        + '/' + date.substring(8, date.length) 
+        + '/' + date.substring(0, 4);
+        return dateTransformed;
+    }
+
+    // Transforms from MM/DD/YYYY to YYYY-MM-DD
+    function transformDateForm(date) {
+        var dateTransformed = date.substring(6, date.length) 
+        + '-' + date.substring(0, 2) 
+        + '-' + date.substring(3, 5);
+        return dateTransformed;
+    }
 
     //Celphone validation
 
@@ -364,60 +375,70 @@ window.onload = function (){
     function password2Blur() {
         if (password2.value === '') {
             errorPassword2[0].textContent = 'repeat your passwprd';
-            password2Input = false
+            password2Input = false;
         }
         else if (password2.value != password.value) {
             errorPassword2[0].textContent = 'error';
-            password2Input = false
+            password2Input = false;
         }
         else password2Input = true
     }
     function password2Focus() {
         errorPassword2[0].textContent = '';
     }
-    // botton
-    
-    var nameInput = true
-    var lastNameInput = true
-    var dniInput = true
-    var datebiInput = true
-    var celInput = true
-    var addressInput = true
-    var localityInput = true
-    var postalInput = true
-    var emailInput = true
-    var passwordInput = true
-    var password2Input = true
+
+   
+    // button
 
     document.getElementById('button-create').onclick = function () {
-        if (nameInput && lastNameInput && dniInput && datebiInput && celInput
-            && addressInput && localityInput && postalInput && emailInput &&
-            passwordInput && password2Input) {
-            alert('sign up');
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/sign-up?name=' + name.value
-                + '&lastName=' + lastName.value + '&dni=' + dni.value + '&datebi=' + dateBi.value 
-                + '&cel=' + cel.value + '&address=' + address.value + '&locality=' + locality.value 
-                + '&postal=' + postal.value + '&email=' + email.value + '&password=' + password.value 
-                + '&password2=' + password2.value )
+        nameBlur();
+        lastnameBlur();
+        dniBlur();
+        datebiBlur();
+        celBlur();
+        addressBlur();
+        localityBlur();
+        postalBlur();
+        emailBlur();
+        passwordBlur();
+        password2Blur();
+        if (nameInput != false && lastNameInput !== false && dniInput !== false && datebiInput !== false
+            && celInput != false && addressInput !== false && localityInput !== false
+            && postalInput !== false && emailInput !== false && passwordInput !== false
+            && password2Input !== false) {
+            alert('login');
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name=' + name.value
+                + '&lastName=' + lastName.value + '&dni=' + dni.value + '&dob=' + transformDateRequest(dateBi.value)
+                + '&phone=' + cel.value + '&address=' + address.value + '&city=' + locality.value
+                + '&zip=' + postal.value + '&email=' + email.value + '&password=' + password.value)
                 .then(function (response) {
-                    return response.json()
+                    return response.json();
                 })
                 .then(function (jsonResponse) {
-                    console.log("json", jsonResponse)
+                    console.log("json", jsonResponse);
                     if (jsonResponse.success) {
-                        console.log("Good", jsonResponse)
+                        console.log("Good", jsonResponse);
                         alert('logged');
-                        /* < --- LÓGICA CUANDO LA REQUEST ES EXITOSA Y MOSTRAR UN ALERT --- > */
+                        localStorage.setItem ('Name', jsonResponse.data.name);
+                        localStorage.setItem ('lastname', jsonResponse.data.lastName);
+                        localStorage.setItem ('Dni', jsonResponse.data.name.dni);
+                        localStorage.setItem ('Date of Birth', jsonResponse.data.dob);
+                        localStorage.setItem ('Celphone', jsonResponse.data.phone);
+                        localStorage.setItem ('address', jsonResponse.data.address);
+                        localStorage.setItem ('Locality', jsonResponse.data.city);
+                        localStorage.setItem ('Postal Code', jsonResponse.data.zip);
+                        localStorage.setItem ('Email', jsonResponse.data.email);
+                        localStorage.setItem ('Password', jsonResponse.data.password);
+                        console.log (localStorage.getItem('Name'))
                     } else {
-                        throw jsonResponse
+                        throw jsonResponse;
                     }
                 })
                 .catch(function (error) {
-                    console.warn('Error', error)
-                    alert('error del feth');
+                    console.log(error)
                     /*  < --- LÓGICA CUANDO LA REQUEST SALE MAL --- > */
                 })
         }
-        else alert('error');
+        else alert('error frond');
     }
 }
