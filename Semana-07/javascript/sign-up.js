@@ -1,4 +1,4 @@
-window.onload = function (){
+window.onload = function () {
     
   var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q',
   'r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L',
@@ -28,7 +28,7 @@ window.onload = function (){
             errorName[0].textContent = 'please enter your name';
             nameInput = false;
         }
-        else if (name.value.length < 4) {
+        else if (name.value.length < 3) {
             errorName[0].textContent = 'only letters and 3 or more';
         }
         else nameInput = true;
@@ -402,8 +402,8 @@ window.onload = function (){
         emailBlur();
         passwordBlur();
         password2Blur();
-        if (nameInput != false && lastNameInput !== false && dniInput !== false && datebiInput !== false
-            && celInput != false && addressInput !== false && localityInput !== false
+        if (nameInput !== false && lastNameInput !== false && dniInput !== false && datebiInput !== false
+            && celInput !== false && addressInput !== false && localityInput !== false
             && postalInput !== false && emailInput !== false && passwordInput !== false
             && password2Input !== false) {
             alert('login');
@@ -416,9 +416,12 @@ window.onload = function (){
                 })
                 .then(function (jsonResponse) {
                     console.log("json", jsonResponse);
+                    alert ('Successful login\nName: ' + name.value + '\nLast Name:' + lastName.value 
+                    + '\nD.N.I: ' + dni.value + '\nDate of birth: ' + dateBi.value + '\nCelphone: ' + cel.value 
+                    + '\nAddress: ' + address.value + '\nLocality: ' + locality.value + '\nPostal code: ' + postal.value 
+                    + '\nEmail: ' + email.value + '\nPassword: ' + password.value + '\nRepeat Password: ' + 'It is not the same');
                     if (jsonResponse.success) {
                         console.log("Good", jsonResponse);
-                        alert('logged');
                         localStorage.setItem ('Name', jsonResponse.data.name);
                         localStorage.setItem ('lastname', jsonResponse.data.lastName);
                         localStorage.setItem ('Dni', jsonResponse.data.name.dni);
@@ -429,7 +432,6 @@ window.onload = function (){
                         localStorage.setItem ('Postal Code', jsonResponse.data.zip);
                         localStorage.setItem ('Email', jsonResponse.data.email);
                         localStorage.setItem ('Password', jsonResponse.data.password);
-                        console.log (localStorage.getItem('Name'))
                     } else {
                         throw jsonResponse;
                     }
@@ -439,6 +441,22 @@ window.onload = function (){
                     /*  < --- LÓGICA CUANDO LA REQUEST SALE MAL --- > */
                 })
         }
-        else alert('error frond');
+        else alert('unsuccessful login\n Name: ' + name.value + '\nLast Name:' + lastName.value + '\nD.N.I: ' 
+        + dni.value + '\nDate of birth: ' + dateBi.value + '\nCelphone: ' + cel.value + '\nAddress: ' + address.value 
+        + '\nLocality: ' + locality.value + '\nPostal code: ' + postal.value + '\nEmail: ' + email.value +
+        '\nPassword: ' + password.value + '\nRepeat Password: ' + 'It is not the same');
     }
+    
+    /* input */
+
+    nameInput = localStorage.getItem('name') ? localStorage.getItem('name') : '';
+    lastnameInput = localStorage.getItem('lastName') ? localStorage.getItem('lastName') : '';
+    dniInput = localStorage.getItem('dni') ? localStorage.getItem('dni') : '';
+    datebiInput = localStorage.getItem('dob') ? localStorage.getItem('dob') : '';
+    celInput = localStorage.getItem('phone') ? localStorage.getItem('phone') : '';
+    addressInput = localStorage.getItem('address') ? localStorage.getItem('address') : '';
+    localityInput = localStorage.getItem('locality') ? localStorage.getItem('locality') : '';
+    postalInput = localStorage.getItem('zip') ? localStorage.getItem('zip') : '';
+    emailInput = localStorage.getItem('email') ? localStorage.getItem('email') : '';
+    passwordInput = localStorage.getItem('password') ? localStorage.getItem('password') : '';
 }
