@@ -3,14 +3,14 @@ window.onload = function () {
     var email = document.getElementById('email');
     var errorEmail = document.getElementsByClassName('error-Email');
 
-    var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q',
-  'r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L',
-  'M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-  var number = ['0','1','2','3','4','5','6','7','8','9']
-  var symbol = ['!','$','%','/','(','=',')','_','-','>','<','*','+','?','¿','|','°',]
-  var lettersNum = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q',
-  'r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L',
-  'M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9']
+    var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q',
+        'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+        'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    var symbol = ['!', '$', '%', '/', '(', '=', ')', '_', '-', '>', '<', '*', '+', '?', '¿', '|', '°',]
+    var lettersNum = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q',
+        'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+        'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
     //emial validation
 
@@ -104,9 +104,9 @@ window.onload = function () {
     // button    
     
     document.getElementById('button-login').onclick = function () {
-        emailBlur ();
-        passwordBlur ();
-        if (emailInput != false && passwordInput != false ) {
+        emailBlur();
+        passwordBlur();
+        if (emailInput != false && passwordInput != false) {
             alert('Login');
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email.value
                 + '&password=' + password.value)
@@ -127,11 +127,8 @@ window.onload = function () {
                     alert('Error' + '\n' + error.msg);
                 })
         }
-        else alert('The fields are incorrect or you are not logged in')
+        else alert('Email: ' + emailBlur() ? email.value : 'Invalid email.' +
+            '\n Password: ' + passwordBlur() ? password.value : + 'Invalid passwperd.')
 
-        
     }
-
-
-
 }
